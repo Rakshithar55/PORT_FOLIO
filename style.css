@@ -1,0 +1,56 @@
+/* General Typography */
+body, h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Image Margin in Row */
+.w3-row-padding img {
+  margin-bottom: 12px;
+}
+
+/* Sidebar Styling */
+.w3-sidebar {
+  width: 120px;
+  background: #222;
+}
+
+/* Main Content Layout */
+#main {
+  margin-left: 120px;
+}
+
+/* Responsive Layout for Small Screens */
+@media only screen and (max-width: 600px) {
+  #main {
+    margin-left: 0;
+  }
+}
+
+/* ===================== */
+/* Project Card Hover Effects */
+/* ===================== */
+
+.w3-light-grey {
+  transition: transform 0.3s ease, 
+              box-shadow 0.3s ease, 
+              background-color 0.3s ease;
+  border-left: 4px solid transparent;
+  cursor: pointer;
+}
+
+.w3-light-grey:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 8px 18px rgba(0, 255, 255, 0.2);
+  background-color: #f1f1f1;
+  border-left: 4px solid #00ffff; /* Cyan border */
+}
+
+/* Heading Color Change on Hover */
+.w3-light-grey h3 {
+  transition: color 0.3s ease;
+}
+
+.w3-light-grey:hover h3 {
+  color: #00ffff;
+}
+
